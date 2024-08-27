@@ -1,0 +1,86 @@
+/*------
+fuentes
+----*/
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*----global css----*/
+:root {
+    --font: #e5e5e5;
+    --white:#ffffff;
+    --Dark-blue:#0a3871;
+    --greey: c5c5c5c5;
+}
+
+/*----selector universal, todas las propiedades generales de nuestra aplicacion---*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+    text-decoration: none;
+    background: var(--white);
+}
+
+::selection {
+    background: var(--Dark-blue);
+    color: var(--white);
+}
+
+
+body {
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*---encabezad----*/
+
+header {
+    position: absolute;
+    margin: 40px 0px 0px 40px
+}
+
+header .logo {
+    display:flex;
+    align-items: flex-start;
+    width: 120px;
+    height: 48px;
+}
+
+/*---main-----*/
+
+main {
+    display: flex;
+    flex-direction: row;
+    background: url(../images/portada.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.encriptador {
+    width: 660%;
+    margin: 168px 0px 0px 140px;
+    background: transparent;
+
+}
+
+.encriptar  {
+    width: 660px;
+    height: 288px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    outline:none;
+    border:1px solid var(--greey);
+    border-radius:15px;
+    resize: none;
+}
+
+.encriptar ::placeholder, :focus {
+    color: var(--Dark-blue);
+
+}
