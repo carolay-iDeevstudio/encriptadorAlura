@@ -9,7 +9,10 @@ fuentes
     --font: #e5e5e5;
     --white:#ffffff;
     --Dark-blue:#0a3871;
-    --greey: c5c5c5c5;
+    --greey: #c5c5c5c5;
+    --Medium-Gray: #67808e;
+    --RGBA: rgba(0,0,0,0.08);
+    --white-blue: #d8dfe8;
 }
 
 /*----selector universal, todas las propiedades generales de nuestra aplicacion---*/
@@ -80,7 +83,59 @@ main {
     resize: none;
 }
 
-.encriptar ::placeholder, :focus {
+.encriptar::placeholder,:focus {
     color: var(--Dark-blue);
+}
 
+.encriptador-aviso {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8;
+    position: absolute;
+    top: 500px;
+
+}
+
+.texto-aviso {
+    width: 100%;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 18px;
+    line-height: 150%;
+    opacity: o,8;
+    color: var(--Medium-Gray);
+}
+
+.encriptador-contenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    top: 526px;
+}
+
+.btn-encriptar {
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--white);
+    background: var(--Dark-blue);
+    border-radius:24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px var(--RGBA);
+
+}
+
+.btn-encriptar:active {
+    box-shadow: inset 2px 2px 4px var(--font),
+    inset -3px -4px 8px var(--Dark-blue);
+    color: var(--white-blue);
 }
