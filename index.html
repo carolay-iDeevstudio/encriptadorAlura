@@ -5,9 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de texto</title>
     <script defer src="./script.js" > </script>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico"> 
 
 </head>
 <body>
-    <h1>iniciando proyecto</h1>
+
+    <!--encabezado-->
+   <header> 
+        <a href="# rel="> 
+            <img src="./images/logo.svg"  alt="logo alura"  class="logo">
+        </a>
+   </header>
+
+
+  <!--encabezado-->
+    <main> 
+        
+        <section class="encriptador">
+
+            <textarea class="encriptar" placeholder="Ingrese texto aquí"> </textarea>
+       
+            <div class="encriptador-aviso"> 
+                <img src="./images/aviso.svg" alt="imagen aviso" class="img-aviso"> 
+                <p class="texto-aviso"> Sólo letras minúsculas y sin acento </p>
+            </div>
+            <div class="encriptador-contenedor">       
+                <button type="submit" class="btn-encriptar"> Encriptar</button>
+                <button type="submit" class="btn-desencriptar">Desencriptar</button>
+            </div>
+        <section class="tarjeta"> 
+            <div class="tarjeta-contenedor"> 
+                <img src="./images/muñeco.svg" alt="imagen muñeco" class="img-muñeco">
+                <p class="texto-uno">Ningun mensaje fue encontrado</p>
+                <p class="texto-dos">Ingresa el texto que desea encriptar o desencriptar</p>
+            </div>
+            <textarea type="mensaje" class="evaluar" readonly></textarea>
+            <button type="submit" class="btn-copiar">Copiar</button>
+        </section>
+        
+    </main>
+
 </body>
 </html>
