@@ -176,7 +176,7 @@ main {
     background: var(--font);
     box-shadow: 10px 24px 32px -8px var(--Grey);
     position:relative;
-    margin: top 40px;
+    margin-top: 40px;
     border-radius: 32px;
     text-align: center;
 }
